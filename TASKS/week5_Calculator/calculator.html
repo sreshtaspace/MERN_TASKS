@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple_Calculator</title>
+    <style>
+        .box{
+    display:grid;
+    grid-template-columns:repeat(2,60px);
+    gap:20px;
+}
+
+.operator{
+    width:50px;
+    height:50px;
+    font-size:30px;
+    border-radius:10px;
+}
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f4f4f4;
+}
+.container{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    width:320px;
+}
+input{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    box-sizing:border-box;
+    font-size:18px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Simple Calculator</h1>
+    <input type="number" id="num1" placeholder="Number 1">
+
+<input type="number" id="num2" placeholder="Number 2">
+
+<div class="box">
+
+    <button class="operator">+</button>
+    <button class="operator">-</button>
+
+    <button class="operator">*</button>
+    <button class="operator">/</button>
+
+</div>
+
+<input type="number" id="answer" placeholder="Answer">
+    </div>
+<script>
+
+let operators = document.getElementsByClassName("operator");
+
+let num1 = document.getElementById("num1");
+let num2 = document.getElementById("num2");
+let answer = document.getElementById("answer");
+for(let i=0; i<operators.length; i++)
+{
+    operators[i].addEventListener("click", function(){
+
+        let n1 = Number(num1.value);
+        let n2 = Number(num2.value);
+
+        let op = this.innerText;
+
+        let result = 0;
+
+        if(op=="+")
+        {
+            result = n1 + n2;
+        }
+
+        if(op=="-")
+        {
+            result = n1 - n2;
+        }
+
+        if(op=="*")
+        {
+            result = n1 * n2;
+        }
+
+        if(op=="/")
+        {
+            result = n1 / n2;
+        }
+
+        answer.value = result;
+
+    });
+}
+
+
+</script>
+</body>
+</html>

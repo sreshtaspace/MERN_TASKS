@@ -1,0 +1,36 @@
+.card
+{
+    display: flex;
+    gap:20px;
+    
+}
+.img
+{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    
+}
+
+
+
+
+
+
+
+/* for changing things/formats when printing */
+@media print and (orientation: landscape){ 
+    p{
+    color:red;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .card{
+        display:inline-block;
+    }
+    .img
+    {
+        background-color: red;
+    }
+}

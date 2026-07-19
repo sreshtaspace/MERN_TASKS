@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodieDash</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+        <a class="navbar-brand" href="#">FoodieDash</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Landing Page -->
+<section class="bg-light text-center p-5">
+    <div class="container">
+        <h1>Welcome to FoodieDash</h1>
+        <p>Enjoy your favorite street food delivered fresh to your doorstep.</p>
+        <a href="#" class="btn btn-danger">Order Now</a>
+    </div>
+</section>
+
+<!-- Food Cards -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Popular Street Foods</h2>
+
+    <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://imgs.search.brave.com/McsCM66MQ-zs7fPYB4x5QoDiq58k121Qh2HpSAghz6o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDY0/NzQzMDExL3Bob3Rv/L3BhbmktcHVyaS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/LTBEcVQ1RkFIa1ho/VE5YaFd4bjB2X2Na/aHFMZTR2U3Jxckp6/V3dubURMVT0" class="card-img-top" alt="Pani Puri" width="250px">
+                <div class="card-body">
+                    <h5 class="card-title">Pani Puri</h5>
+                    <p class="card-text">
+                        Crispy puris filled with spicy and tangy flavored water.
+                    </p>
+                    <a href="#" class="btn btn-danger">Order</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://imgs.search.brave.com/C_C6aTI1IMkHgo8egRCEnhRUJaZaWG4Vb6sRw680Hjs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2hhcm1pc3Bhc3Np/b25zLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNi8wNC9t/YXNhbGEtcHVyaS1z/dGVwMjMuanBn" class="card-img-top" alt="Masala Puri">
+                <div class="card-body">
+                    <h5 class="card-title">Masala Puri</h5>
+                    <p class="card-text">
+                        Hot mashed peas topped with crunchy puris and chutneys.
+                    </p>
+                    <a href="#" class="btn btn-danger">Order</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://imgs.search.brave.com/4XdUTISHgAyX0UeFGX5UxHH4CBsuytJy8fmCWiAr0Ws/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE5LzE4LzE3Lzg3/LzM2MF9GXzE5MTgx/Nzg3MTFfcm5vcjZo/UzdtamhYVnVVZFh3/emxnRWxWRlRKVFZ1/STUuanBn" class="card-img-top" alt="Bhel Puri">
+                <div class="card-body">
+                    <h5 class="card-title">Bhel Puri</h5>
+                    <p class="card-text">
+                        A tasty mix of puffed rice, vegetables and tangy chutneys.
+                    </p>
+                    <a href="#" class="btn btn-danger">Order</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Ratings -->
+<div class="container mt-5">
+    <h2 class="text-center">Customer Ratings</h2>
+
+    <div class="alert alert-success text-center mt-3">
+        ⭐⭐⭐⭐⭐ 4.8 / 5 Rating
+    </div>
+</div>
+
+<!-- Registration Form -->
+<div class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Registration Form</h2>
+
+    <form>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email(optional)">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" placeholder="Enter your phone number">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input type="address" class="form-control" placeholder="Enter your address">
+        </div>
+
+        <button type="submit" class="btn btn-danger">Register</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="bg-danger text-white text-center p-4">
+    <h5>FoodieDash</h5>
+    <p>Fast Delivery | Fresh Street Food | Tasty & Delicious</p>
+    <p>Email: support@foodiedash.com | Phone: +91 8248050820</p>
+</footer>
+
+</body>
+</html>
